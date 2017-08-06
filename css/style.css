@@ -1,0 +1,368 @@
+/* 
+*general styles - START 
+*/
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Lato', sans-serif;
+	color: #291f1a;
+	margin: 0;
+	background-color: antiquewhite; /* background roboczy */
+	
+}
+a {
+	transition: all .3s;
+}
+span {
+	color: #1ac056;
+	font-weight: 400;
+}
+
+h2 {
+	text-align: center;
+}
+
+section {
+	padding: 30px 80px;
+}
+.col-1-2 {
+	width:50%;
+	float: left;
+}
+/* 
+*general styles - STOP 
+*/
+
+
+
+
+
+
+/* Main nav styles - START
+*/
+
+#main-nav {
+	background-color: #fff;
+	position: fixed;
+	z-index: 10;
+	width: 100%;
+   top: 0;
+    right: 0;
+}
+}
+
+#main-nav .toggle, #drop {
+	display: none;
+}
+#main-nav ul {
+	margin: 0;
+		text-align: right;
+	
+}
+
+#main-nav ul li {
+	display: inline-block;
+	padding: 25px;
+}
+#main-nav ul li a {
+	
+	text-decoration: none;
+	color: #1ac056;
+	font-weight: 300;
+	text-transform: lowercase;
+	}
+#main-nav ul li a:hover {
+	
+	
+	color:  #291f1a;
+	
+	}
+#header-background {
+	
+}
+	
+
+/* 
+*Main nav styles - STOP
+*/
+
+/* 
+*Main header styles - START 
+*/
+#main-header {
+	background-image: url(../img/header-background.jpg);
+	background-position: center;
+	background-size: cover;
+	height: 90vh;
+	position: relative;
+	
+}
+#main-header .header-caption {
+	color: #fff;
+	font-family: 'Roboto',sans-serif;
+	position: absolute;
+	text-align: center;
+	
+	left: 0;
+	right: 0;
+	
+	top: 50%;
+	transform: translateY(-50%);
+	
+}
+
+
+#main-header .header-caption h1 {
+	font-size: 4em;
+	font-weight: 300;
+	
+}
+#main-header .header-caption h2 {
+	font-size: 2em;
+	font-weight: 300;
+	
+	
+	
+}
+
+
+
+
+/* 
+*Main header stylesstyles - STOP 
+*/
+
+/* 
+*about section styles - START
+*/
+
+#about {
+	background-color: yellow;
+	overflow: hidden;
+	box-shadow: 0px 2px 2px 0px
+		rgba(0,0,0,0.75);
+}
+
+#about figure {
+	margin: 0;
+	text-align: left;
+	}
+#about figure img {
+	max-width: 100%;
+	max-height: 350px;
+	border: 10px solid #fff;
+	border-radius: 5px;
+	
+
+}
+
+#about div p {
+	font-weight: 300;
+	line-height: 24px;
+	text-align: left;
+}
+/*
+* About Section styles - STOP 
+*/
+
+/* section skills styles starts */
+#skills {
+    background-color: aquamarine;
+
+	box-shadow: 0px 2px 2px 0px
+		rgba(0,0,0,0.75);
+    margin: 0;
+    
+}
+#skills > p {
+	text-align: center;
+}
+#skills div#skills-icons {
+text-align: center;
+}
+#skills #skills-icons figure {
+	display: inline-block;
+	
+}
+#skills #skills-icons figure img {
+	margin-bottom: 15px;
+}
+/* section skills styles stops */
+
+/* section Portfolio style start */
+
+#portfolio #portfolio-item-1 {
+	background-image: url(../img/portfolio1.jpg);
+}
+#portfolio #portfolio-item-2 {
+	background-image: url(../img/portfolio2.jpg);
+}
+#portfolio #portfolio-item-3 {
+	background-image: url(../img/portfolio4.jpg);
+}
+#portfolio .portfolio-items {
+	text-align: center;
+	font-size: 0;
+	
+	
+	
+}
+#portfolio .portfolio-items .portfolio-item {
+	height: 350px;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	display: inline-block;
+	width: 33.3333%;
+	position: relative;
+	
+}
+
+#portfolio .portfolio-items .portfolio-item .item-mask {
+	background-color: rgba(42, 61, 79, 0.8);
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+	transition: all 0.3s ease-in-out;
+	position: absolute;
+	font-size: initial;
+}
+#portfolio .portfolio-items .portfolio-item .item-mask:hover {
+opacity: 1;
+}
+#portfolio .portfolio-items .portfolio-item .item-mask .item-content {
+	height: 330px;
+	border: 1px solid #fff;
+	margin: 10px;
+	position: relative;
+	
+}
+
+#portfolio .portfolio-items .portfolio-item .item-mask .item-content .item-content-inner {
+	color: #fff;
+	position: absolute;
+	top: 50%;
+	transform:translateY(-50%);
+	right: 0;
+	left: 0;
+	padding: 5px;
+	
+	
+}
+#portfolio .portfolio-items .portfolio-item .item-mask .item-content .item-content-inner a {
+	color: #fff;
+	
+}
+
+#portfolio .portfolio-items .portfolio-item .item-mask .item-content .item-content-inner a:hover {
+	color: #1ac056;
+	
+}
+
+
+
+
+/* section Portfolio style stop */
+/* section contact styles start */
+
+#contact {
+	background-color: #213b50;
+	color: #fff;
+	overflow: hidden;
+    font-family: 'Verdana' sans-serif;
+	
+}
+
+#contact .contact-data {
+	width: 50%;
+	float: left;
+	
+	
+}
+#contact .contact-data h2 {
+	text-align: left;
+	font-size: 30px;
+}
+
+#contact .contact-data address {
+	font-style: normal;
+	margin: 50px 0;
+	line-height: 25px;
+	
+}
+#contact .contact-data address a {
+	color: #fff;
+}
+	
+#contact .contact-data .contact-social-icons a {
+	display: inline-block;
+	border: 1px solid green;
+	color: yellow;
+	height: 38px;
+	width: 38px;
+	text-align: center;
+	line-height: 38px;
+	margin-right: 30px;
+	font-size: 22px;
+}
+#contact .contact-data .contact-social-icons a:hover {
+	
+	color: #213b50;
+	border: 1px solid #213b50;
+	background-color: #fff;
+}
+
+#contact .contact-form {
+	width: 50%;
+	float: left;
+	margin-top: 100px;
+}
+
+#contact .contact-form form input,
+
+#contact .contact-form form textaera {
+	width: 100%;
+	padding: 15px;
+	margin-bottom: 15px;
+	background-color: #2b4a64;
+	border: #2b4a64 0px;
+	color: #fff;
+    font-family: 'Times New Roman' sans serif;
+    font-size: 20px;
+    
+}
+
+#contact .contact-form form input:focus,
+#contact .contact-form form textaera:focus {
+	background-color: #1ac056;
+	
+}
+#contact .contact-form form input[type="submit"] {
+	background-color: #1ac056;
+color: #fff;
+	width: auto;
+	text-transform: uppercase;
+	font-weight: 600;
+	padding: 15px 30px;
+	float: right;
+	border: 1px #fff solid;
+}
+#contact .contact-form form input[type="submit"]:hover {
+	background-color: #fff;
+	color: #1ac056;
+	cursor: pointer;
+}
+footer {
+	background-color: #142634;
+	color: #fff;
+	padding: 0 80px;
+	
+}
+footer p {
+	margin: 0;
+}
+/* section contact styles stop*/
+
+
